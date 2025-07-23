@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produtos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <img src="senaitech_logo.png" alt="Logo SENAI TECH" class="logo-img">
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <button id="themeToggle" class="toggle-theme">Alternar Tema</button>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <h1>Nossos Produtos</h1>
+    <div class="produtos-grid">
+      <div class="card"><a href="produto.html" style="color: inherit;">Produto Gamer 1</a></div>
+      <div class="card">Produto Gamer 2</div>
+      <div class="card">Produto Gamer 3</div>
+    </div>
+    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SENAI TECH. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+document.getElementById('themeToggle').addEventListener('click', () => {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  document.documentElement.setAttribute(
+    "data-theme", currentTheme === "light" ? "dark" : "light"
+  );
+});
+</script>
+</body>
+</html>
